@@ -1,0 +1,6 @@
+{
+  "name": "Artisan Store & Studio",
+  "description": "Moderner Online-Shop mit vollwertigem Verkäufer-Dashboard: Eigene Artikel einstellen, verwalten und direkt online verkaufen.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
