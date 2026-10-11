@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artisan Store & Studio</title>
+    <script>
+      // Single Page App redirect for GitHub Pages
+      // If a subpath or deep link is refreshed, redirect to the root index.html
+      const path = window.location.pathname;
+      const origin = window.location.origin;
+      // Get repo subfolder name if any
+      const segments = path.split('/').filter(Boolean);
+      if (segments.length > 0) {
+        // e.g. /my-repo/subpage -> redirect to /my-repo/
+        const repoPath = '/' + segments[0] + '/';
+        window.location.replace(origin + repoPath);
+      } else {
+        window.location.replace(origin + '/');
+      }
+    </script>
+  </head>
+  <body style="font-family: system-ui, sans-serif; text-align: center; padding: 50px;">
+    <h2>Weiterleitung zum Shop...</h2>
+    <p><a href="./">Hier klicken, falls die Weiterleitung nicht automatisch startet.</a></p>
+  </body>
+</html>
